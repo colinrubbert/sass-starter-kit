@@ -1,4 +1,17 @@
+/**
+  * Table of Contents
+  *
+  * 1. Imported Fonts
+  * 2. Sass Variables
+  * 3. Typography
+  * 4. Global Settings & HTML Elements
+  * 5. Navigation Styling
+  *
+  */
+/* 1. Imported Fonts */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+/* 2. Sass Variables */
+/* 3. Typography */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -12,37 +25,37 @@ body, html, h1, h2, h3, h4, h5, h6, p,
 }
 
 .huge, h1 {
-  font-size: 64px;
+  font-size: 2.5rem;
   line-height: 1.2;
 }
 
 .x-large, h2 {
-  font-size: 48px;
+  font-size: 2rem;
   line-height: 1.2;
 }
 
 .large, h3 {
-  font-size: 36px;
+  font-size: 1.375rem;
   line-height: 1.2;
 }
 
 .medium, h4 {
-  font-size: 24px;
+  font-size: 1.125rem;
   line-height: 1.2;
 }
 
 .small, h5 {
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.2;
 }
 
 .x-small, h6 {
-  font-size: 12px;
+  font-size: 0.875rem;
   line-height: 1.2;
 }
 
 p {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.2;
   padding: 10px;
 }
@@ -54,3 +67,6 @@ em, .text-italic {
 .text-center {
   text-align: center;
 }
+
+/* 4. Global Settings & HTML Elements */
+/* 5. Navigation Styling */
