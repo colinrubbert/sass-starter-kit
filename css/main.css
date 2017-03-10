@@ -93,6 +93,26 @@ html, body {
   width: auto;
 }
 
+.desktop-navigation-wrapper {
+  display: none;
+}
+
+.desktop-navigation-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.desktop-navigation-wrapper li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.desktop-navigation-wrapper a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
 .navigation-icons {
   position: fixed;
   left: 0;
@@ -155,4 +175,25 @@ html, body {
 
 .mobile-navigation-wrapper.open {
   transform: translateY(0);
+}
+
+/* Media Queries */
+@media screen and (min-width: 800px) {
+  .navigation-wrapper {
+    justify-content: space-between;
+    padding: 0 10%;
+  }
+  .navigation-logo {
+    height: 3rem;
+    width: auto;
+  }
+  .desktop-navigation-wrapper {
+    display: block;
+  }
+  .navigation-icons {
+    display: none;
+  }
+  .mobile-navigation-wrapper {
+    display: none;
+  }
 }
