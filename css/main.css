@@ -9,55 +9,49 @@
   *
   */
 /* 1. Imported Fonts */
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400,700");
 /* 2. Sass Variables */
 /* 3. Typography */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  font-family: Hind, "Helvetica Nueue", Helvetica, sans-serif;
 }
 
 body, html, h1, h2, h3, h4, h5, h6, p,
 .huge, .x-large, .large, .medium, .small, .x-small {
-  margin: 0;
-  padding: 0;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
 }
 
 .huge, h1 {
   font-size: 2.5rem;
-  line-height: 1.2;
 }
 
 .x-large, h2 {
   font-size: 2rem;
-  line-height: 1.2;
 }
 
 .large, h3 {
-  font-size: 1.375rem;
-  line-height: 1.2;
+  font-size: 1.5rem;
 }
 
 .medium, h4 {
-  font-size: 1.125rem;
-  line-height: 1.2;
+  font-size: 1.25rem;
 }
 
 .small, h5 {
   font-size: 1rem;
-  line-height: 1.2;
 }
 
 .x-small, h6 {
   font-size: 0.875rem;
-  line-height: 1.2;
 }
 
 p {
   font-size: 1.125rem;
-  line-height: 1.2;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 em, .text-italic {
@@ -76,6 +70,23 @@ html, * {
 html, body {
   margin: 0;
   padding: 0;
+}
+
+body {
+  padding-bottom: 3rem;
+}
+
+section {
+  padding: 2rem 1rem 0 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    padding-bottom: 0;
+  }
+  section {
+    padding: 2rem 10% 0 10%;
+  }
 }
 
 /* 5. Navigation Styling */
@@ -109,6 +120,7 @@ html, body {
 }
 
 .desktop-navigation-wrapper a {
+  color: #313335;
   font-size: 1.5rem;
   text-decoration: none;
 }
@@ -142,7 +154,8 @@ html, body {
   width: 100%;
   max-width: 100%;
   padding: 2rem;
-  background: #ccc;
+  background: #fff;
+  box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.2);
   transform: translateY(calc(100% + 3rem));
   transition: all ease-in-out 500ms;
 }
@@ -169,12 +182,17 @@ html, body {
 }
 
 .mobile-navigation-wrapper a {
+  color: #313335;
   font-size: 1.5rem;
   text-decoration: none;
 }
 
 .mobile-navigation-wrapper.open {
   transform: translateY(0);
+}
+
+.copyright {
+  margin-top: 2rem;
 }
 
 /* Media Queries */
@@ -196,4 +214,29 @@ html, body {
   .mobile-navigation-wrapper {
     display: none;
   }
+}
+
+.box {
+  height: 3rem;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary {
+  background-color: #446CB3;
+}
+
+.secondary {
+  background-color: #ec4a59;
+}
+
+.highlight {
+  background-color: #6689C9;
+}
+
+.highlight-alt {
+  background-color: #ef9099;
 }
