@@ -89,6 +89,47 @@ section {
   }
 }
 
+.button {
+  max-width: 12rem;
+  font-size: 1rem;
+  padding: .5rem 2rem;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  transition: all ease-in-out 500ms;
+}
+
+.button:hover {
+  background-color: #d9d9d9;
+}
+
+.button-large {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.button-small {
+  font-size: .5rem;
+  padding: .5rem 1rem;
+}
+
+.primary-button {
+  background-color: #446CB3;
+}
+
+.primary-button:hover {
+  background-color: #36568e;
+}
+
+.secondary-button {
+  background-color: #ec4a59;
+}
+
+.secondary-button:hover {
+  background-color: #e71c2f;
+}
+
 /* 5. Navigation Styling */
 .navigation-wrapper {
   height: 80px;
@@ -239,4 +280,13 @@ section {
 
 .highlight-alt {
   background-color: #ef9099;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-wrapper button {
+  margin-bottom: 1rem;
 }

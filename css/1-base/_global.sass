@@ -27,3 +27,32 @@ section
 
 // Buttons
 
+.button
+  max-width: 12rem
+  font-size: 1rem
+  padding: .5rem 2rem
+  background-color: $divider-color
+  border: none
+  border-radius: 2px
+  box-shadow: $box-shadow
+  transition: $primary-transition
+  &:hover
+    background-color: darken($divider-color, 10%)
+
+.button-large
+  font-size: 1.5rem
+  padding: 1rem 2rem
+
+.button-small
+  font-size: .5rem
+  padding: .5rem 1rem
+
+.primary-button
+  background-color: $primary-color
+  &:hover
+    background-color: darken($primary-color, 10%)
+
+.secondary-button
+  background-color: $secondary-color
+  &:hover
+    background-color: darken($secondary-color, 10%)
