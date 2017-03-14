@@ -90,14 +90,15 @@ section {
 }
 
 .button {
-  max-width: 12rem;
   font-size: 1rem;
-  padding: .5rem 2rem;
+  padding: .5rem 1.5rem;
   background-color: #f3f3f3;
   border: none;
   border-radius: 2px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
   transition: all ease-in-out 500ms;
+  text-decoration: none;
+  color: #313335;
 }
 
 .button:hover {
@@ -105,12 +106,12 @@ section {
 }
 
 .button-large {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding: 1rem 2rem;
 }
 
 .button-small {
-  font-size: .5rem;
+  font-size: .75rem;
   padding: .5rem 1rem;
 }
 
@@ -128,6 +129,24 @@ section {
 
 .secondary-button:hover {
   background-color: #e71c2f;
+}
+
+.outline-primary-button {
+  background-color: transparent;
+  border: 1px solid #446CB3;
+}
+
+.outline-primary-button:hover {
+  background-color: #afc1e1;
+}
+
+.outline-secondary-button {
+  background-color: transparent;
+  border: 1px solid #ec4a59;
+}
+
+.outline-secondary-button:hover {
+  background-color: #fbd4d8;
 }
 
 /* 5. Navigation Styling */
@@ -283,8 +302,7 @@ section {
 }
 
 .button-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 
 .button-wrapper button {
